@@ -1,0 +1,14 @@
+Answers are in the file answer_v1.c
+
+I have written everything in C. Actually went out of my way not to use C++ 
+and realized that it was in the first assignement (the MP3 player) that ANSI-C
+was a requirement and not this one. I have used POSIX only interfaces (at least
+I think I did) - I've followed this 
+http://pubs.opengroup.org/onlinepubs/9699919799/. I have made sure that the 
+functions that I was using were part of the QNX Neutrino API but I guess that 
+since QNX is fully POSIX it should be OK. 
+
+It should compile on any Linux device using the following command
+ $ gcc -Wall -D_REENTRANT answer_v1.c -lpthread -o answer
+
+I have used Cygwin and gcc v3.4.4 to compile. 
